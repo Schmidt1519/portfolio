@@ -1,10 +1,11 @@
-import { VStack, Flex, Heading, IconButton, Spacer } from '@chakra-ui/react';
+import { VStack, Flex, Heading, IconButton, Spacer, Link } from '@chakra-ui/react';
 import { FaSun, FaMoon, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
 import { useColorMode } from '@chakra-ui/color-mode';
-import Profile from './components/profile';
+import Projects from './components/projects';
 import Header from './components/header';
 import Social from './components/social';
+
 
 function App() {
 
@@ -17,14 +18,14 @@ function App() {
         {/* insert logo here */}
         <Heading ml="6" size="md" fontWeight="semibold" color="blue.300">L S</Heading>
         <Spacer></Spacer>
-        <IconButton icon={<FaLinkedin />} isRound="true"></IconButton>
-        <IconButton icon={<FaGithub />} isRound="true"></IconButton>
+        <Link href="https://www.linkedin.com/in/leighton-schmidt86/" isExternal><IconButton icon={<FaLinkedin />} isRound="true"></IconButton></Link>
+        <Link href="https://github.com/Schmidt1519/" isExternal><IconButton icon={<FaGithub />} isRound="true"></IconButton></Link>
         <IconButton icon={<FiMail />} isRound="true"></IconButton>
         <IconButton ml={8} icon={isDark ? <FaSun/> : <FaMoon />} isRound="true" onClick={toggleColorMode}></IconButton>
       </Flex>
         <Header></Header>
         <Social></Social>
-        <Profile></Profile>
+        <Projects></Projects>
     </VStack>
   );
 }

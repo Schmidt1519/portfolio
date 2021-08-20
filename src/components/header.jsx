@@ -2,6 +2,7 @@ import React from 'react';
 import { useColorMode } from '@chakra-ui/color-mode';
 import { useMediaQuery, Stack, Flex, Box, Text, Image } from '@chakra-ui/react';
 
+
 function Header() {
 
     const {colorMode} = useColorMode();
@@ -26,7 +27,7 @@ function Header() {
                     boxSize="300px" src="https://avatars.githubusercontent.com/u/82241251?v=4"/>
                 </Flex>
         </Stack>
-    )
+    );
 }
 
 export default Header;

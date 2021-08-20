@@ -1,8 +1,8 @@
 import React from 'react';
 import { HStack } from '@chakra-ui/react';
-import {Icon, ExternalLinkIcon } from '@chakra-ui/icon';
+import {Icon } from '@chakra-ui/icon';
 import { FaFacebook, FaTwitter, FaYoutube, FaSpotify, FaInstagramSquare } from 'react-icons/fa';
-import { Link } from "@chakra-ui/react"
+import { Link } from '@chakra-ui/react';
 
 
 function Social() {
