@@ -1,5 +1,5 @@
 import React from 'react';
-import { useMediaQuery, Flex, Box, Text, Image } from '@chakra-ui/react';
+import { useMediaQuery, Flex, Box, Text, Image, Link } from '@chakra-ui/react';
 
 function Projects() {
 
@@ -17,21 +17,50 @@ function Projects() {
                     <Flex rounded="xl" direction="column" mt={4} ml={isNotSmallScreen ? 4 : 0}
                     bg="blue.400" h="30vh" w="30vh" justify="flex-end" _hover={{ bg: "teal.400", }}>
                         <Text color="white" p="4" fontSize="xl" fontWeight="semibold">Med Spa</Text>
+                            <Flex>
+                                <Link href="https://github.com/Schmidt1519/med-spa-frontend/" isExternal>
+                                    <Text color="white" p="4" fontSize="sm" fontWeight="semibold">Server</Text>
+                                </Link>
+                                <Link href="https://github.com/Schmidt1519/med-spa-backend/" isExternal>
+                                    <Text color="white" p="4" fontSize="sm" fontWeight="semibold">Client</Text>
+                                </Link>
+                            </Flex>
                     </Flex>
 
                     <Flex rounded="xl" direction="column" mt={4} ml={isNotSmallScreen ? 4 : 0}
                         bg="blue.400" h="30vh" w="30vh" justify="flex-end" _hover={{ bg: "teal.400", }}>
                         <Text color="white" p="4" fontSize="xl" fontWeight="semibold">Star Wars E-Commerce</Text>
+                            <Flex>
+                            <Link href="https://github.com/Schmidt1519/StarWarsECommerce/" isExternal>
+                                    <Text color="white" p="4" fontSize="sm" fontWeight="semibold">Server/Client</Text>
+                                </Link>
+                            </Flex>
                     </Flex>
 
                     <Flex rounded="xl" direction="column" mt={4} ml={isNotSmallScreen ? 4 : 0}
                     bg="blue.400" h="30vh" w="30vh" justify="flex-end" _hover={{ bg: "teal.400", }}>
                         <Text color="white" p="4" fontSize="xl" fontWeight="semibold">Flashcards</Text>
+                            <Flex>
+                            <Link href="https://github.com/Schmidt1519/flashcard-react/" isExternal>
+                                    <Text color="white" p="4" fontSize="sm" fontWeight="semibold">Server</Text>
+                                </Link>
+                                <Link href="https://github.com/Schmidt1519/flashcards-django-rest/" isExternal>
+                                    <Text color="white" p="4" fontSize="sm" fontWeight="semibold">Client</Text>
+                                </Link>
+                            </Flex>
                     </Flex>
 
                     <Flex rounded="xl" direction="column" mt={4} ml={isNotSmallScreen ? 4 : 0}
                     bg="blue.400" h="30vh" w="30vh" justify="flex-end" _hover={{ bg: "teal.400", }}>
                         <Text color="white" p="4" fontSize="xl" fontWeight="semibold">Music Library</Text>
+                            <Flex>
+                            <Link href="https://github.com/Schmidt1519/music-library-react/" isExternal>
+                                    <Text color="white" p="4" fontSize="sm" fontWeight="semibold">Server</Text>
+                                </Link>
+                                <Link href="https://github.com/Schmidt1519/music-library/" isExternal>
+                                    <Text color="white" p="4" fontSize="sm" fontWeight="semibold">Client</Text>
+                                </Link>
+                            </Flex>
                     </Flex>
                 </Flex>
      
