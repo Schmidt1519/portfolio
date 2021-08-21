@@ -10,7 +10,7 @@ function Projects() {
             maxWidth={{ base: "100vh", md:"130vh", lg: "130vh", xl: "130vh" }}>
         
             <Box alignSelf="center" px="32" py="16">
-                <Text fontWeight="bold" fontSize="2x1">Projects</Text>
+                <Text fontWeight="bold" fontSize="2xl" align="center">Projects</Text>
             
                 <Flex direction={isNotSmallScreen ? "row" : "column"} mt={8}>
 

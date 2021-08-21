@@ -30,8 +30,8 @@ function Header() {
                 My Resume</Button>
                 </Box>
                 
-                <Image m="10" alignSelf="center" mt={isNotSmallScreen ? "0" : "12"}
-                    mb={isNotSmallScreen ? "0" : "12"} borderRadius="full"
+                <Image alignSelf="center" mt={isNotSmallScreen ? "0" : "12"}
+                    mb={isNotSmallScreen ? "0" : "12"} ml={isNotSmallScreen ? "5" : "0"} borderRadius="full"
                     backgroundColor="transparent" boxShadow="lg"
                     boxSize="300px" src="https://avatars.githubusercontent.com/u/82241251?v=4"/>
                 </Flex>
