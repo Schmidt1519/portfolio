@@ -1,13 +1,15 @@
 import React from 'react';
-import { HStack } from '@chakra-ui/react';
+import { HStack, Link, useMediaQuery} from '@chakra-ui/react';
 import {Icon } from '@chakra-ui/icon';
 import { FaFacebook, FaTwitter, FaYoutube, FaSpotify, FaInstagramSquare } from 'react-icons/fa';
-import { Link } from '@chakra-ui/react';
 
 
 function Social() {
+
+    const [isNotSmallScreen] = useMediaQuery("(min-width:600px)");
+
     return (
-        <HStack spacing="24">
+        <HStack spacing={isNotSmallScreen ? "24" : "3"}>
             <Link href="https://www.facebook.com/leighton.schmidt/" isExternal><Icon as={FaFacebook} boxSize="10"/></Link>
             <Link href="https://twitter.com/Schmidt15" isExternal><Icon as={FaTwitter} boxSize="10"/></Link>
             <Link href="https://www.youtube.com/channel/UCBxQk3QBpPZLkhhdsDoAl3w/" isExternal><Icon as={FaYoutube} boxSize="10"/></Link>

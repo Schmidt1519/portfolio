@@ -15,7 +15,7 @@ function Projects() {
                 <Flex direction={isNotSmallScreen ? "row" : "column"} mt={8}>
 
                     <Flex rounded="xl" direction="column" mt={4} ml={isNotSmallScreen ? 4 : 0}
-                    bg="blue.400" h="30vh" w="30vh" justify="flex-end" _hover={{ bg: "teal.400", }}>
+                    bg="blue.400" h="20vh" w="20vh" justify="flex-end" _hover={{ bg: "teal.400", }}>
                         <Text color="white" p="4" fontSize="xl" fontWeight="semibold">Med Spa</Text>
                             <Flex>
                                 <Link href="https://github.com/Schmidt1519/med-spa-frontend/" isExternal>
@@ -28,7 +28,7 @@ function Projects() {
                     </Flex>
 
                     <Flex rounded="xl" direction="column" mt={4} ml={isNotSmallScreen ? 4 : 0}
-                        bg="blue.400" h="30vh" w="30vh" justify="flex-end" _hover={{ bg: "teal.400", }}>
+                        bg="blue.400" h="20vh" w="20vh" justify="flex-end" _hover={{ bg: "teal.400", }}>
                         <Text color="white" p="4" fontSize="xl" fontWeight="semibold">Star Wars E-Commerce</Text>
                             <Flex>
                             <Link href="https://github.com/Schmidt1519/StarWarsECommerce/" isExternal>
@@ -38,7 +38,7 @@ function Projects() {
                     </Flex>
 
                     <Flex rounded="xl" direction="column" mt={4} ml={isNotSmallScreen ? 4 : 0}
-                    bg="blue.400" h="30vh" w="30vh" justify="flex-end" _hover={{ bg: "teal.400", }}>
+                    bg="blue.400" h="20vh" w="20vh" justify="flex-end" _hover={{ bg: "teal.400", }}>
                         <Text color="white" p="4" fontSize="xl" fontWeight="semibold">Flashcards</Text>
                             <Flex>
                             <Link href="https://github.com/Schmidt1519/flashcard-react/" isExternal>
@@ -51,7 +51,7 @@ function Projects() {
                     </Flex>
 
                     <Flex rounded="xl" direction="column" mt={4} ml={isNotSmallScreen ? 4 : 0}
-                    bg="blue.400" h="30vh" w="30vh" justify="flex-end" _hover={{ bg: "teal.400", }}>
+                    bg="blue.400" h="20vh" w="20vh" justify="flex-end" _hover={{ bg: "teal.400", }}>
                         <Text color="white" p="4" fontSize="xl" fontWeight="semibold">Music Library</Text>
                             <Flex>
                             <Link href="https://github.com/Schmidt1519/music-library-react/" isExternal>
@@ -62,6 +62,7 @@ function Projects() {
                                 </Link>
                             </Flex>
                     </Flex>
+
                 </Flex>
      
             </Box>
