@@ -6,7 +6,6 @@ import Projects from './components/projects';
 import Header from './components/header';
 import Social from './components/social';
 
-
 function App() {
 
   const {colorMode, toggleColorMode} = useColorMode();

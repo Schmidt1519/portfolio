@@ -2,7 +2,6 @@ import React from 'react';
 import { useColorMode } from '@chakra-ui/color-mode';
 import { useMediaQuery, Stack, Flex, Box, Text, Image, Button, Spacer } from '@chakra-ui/react';
 
-
 function Header() {
 
     const {colorMode} = useColorMode();

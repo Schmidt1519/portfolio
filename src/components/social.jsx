@@ -3,7 +3,6 @@ import { HStack, Link, useMediaQuery} from '@chakra-ui/react';
 import {Icon } from '@chakra-ui/icon';
 import { FaFacebook, FaTwitter, FaYoutube, FaSpotify, FaInstagramSquare } from 'react-icons/fa';
 
-
 function Social() {
 
     const [isNotSmallScreen] = useMediaQuery("(min-width:600px)");
