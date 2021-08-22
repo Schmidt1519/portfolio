@@ -1,5 +1,5 @@
 import React from 'react';
-import { useMediaQuery, Flex, Box, Text, Image, Link } from '@chakra-ui/react';
+import { useMediaQuery, Flex, Box, Text, Link } from '@chakra-ui/react';
 
 function Projects() {
 

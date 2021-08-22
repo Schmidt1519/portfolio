@@ -1,6 +1,6 @@
 import React from 'react';
 import { useColorMode } from '@chakra-ui/color-mode';
-import { useMediaQuery, Stack, Flex, Box, Text, Image, Button, Spacer } from '@chakra-ui/react';
+import { useMediaQuery, Stack, Flex, Box, Text, Image, Button, Link } from '@chakra-ui/react';
 
 function Header() {
 
@@ -23,10 +23,9 @@ function Header() {
                     <Text color={isDark ? "gray.200" : "gray.500"} mt="3">I recently left 10+ years in the Accounting/Finance field behind me to pursue Software Engineering! My love for computers and fascination with the amazing software that makes our lives easier drove me to make a change in my life.</Text>
                     <Text color={isDark ? "gray.200" : "gray.500"} mt="3">While I am grateful for the knowledge gained through my career thus far, I believe my future holds much more rewarding work. With young kids, I know how valuable time is and how important technology is in getting things done efficiently.</Text>
                     <Text color={isDark ? "gray.200" : "gray.500"} mt="3">I live in the Kansas City metro and when not spending time with family, I enjoy working out and playing sports, concerts, cyrptocurrencies, and traveling to Colorado for outdoor adventures.</Text>
-                
-                <Button mt={8} colorScheme="blue" onClick={() => 
-                <iframe src="http://docs.google.com/gview?url=https://github.com/Schmidt1519/resume/raw/main/Leighton%20Schmidt%20-%20Resume.pdf&embedded=true" style="width:100%; height:100%;" frameborder="0"></iframe>}>
-                My Resume</Button>
+
+                <Link href="https://schmidt1519.github.io/resume/" isExternal><Button mt={8} colorScheme="blue" _hover={{ bg: "teal.400", }}>My Resume</Button></Link>
+
                 </Box>
                 
                 <Image alignSelf="center" mt={isNotSmallScreen ? "0" : "12"}
