@@ -1,10 +1,11 @@
-import { VStack, Flex, Heading, IconButton, Spacer, Link, Image, Box } from '@chakra-ui/react';
+import { VStack, Flex, IconButton, Spacer, Link, Image, Box } from '@chakra-ui/react';
 import { FaSun, FaMoon, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
 import { useColorMode } from '@chakra-ui/color-mode';
 import Projects from './components/projects';
 import Header from './components/header';
 import Social from './components/social';
+import './App.css';
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
   const isDark = colorMode === "dark";
   
   return (
-    <VStack p={5}>
+    <VStack p={4}>
       <Flex w="100%">
         <Box>
           <Image boxSize="65px" objectFit="cover" src="/images/LSlogo.png" alt="Leighton Schmidt logo"/>
@@ -23,10 +24,15 @@ function App() {
         <Link href="mailto:schmidt1519@gmail.com" isExternal> <IconButton icon={<FiMail />} isRound="true" type="button"></IconButton></Link>
         <IconButton ml={8} icon={isDark ? <FaSun/> : <FaMoon />} isRound="true" onClick={toggleColorMode}></IconButton>
       </Flex>
+      {/* <Flex w="100%"> */}
         <Header></Header>
+        {/* </Flex> */}
+        {/* <Flex w="100%"> */}
         <Projects></Projects>
-        <Social></Social>
-
+        {/* </Flex> */}
+        {/* <Flex w="100%"> */}
+        <Social ></Social>
+        {/* </Flex> */}
     </VStack>
   );
 }
