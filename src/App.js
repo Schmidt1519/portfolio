@@ -15,9 +15,9 @@ function App() {
   return (
     <VStack p={4}>
       <Flex w="100%">
-        {/* <Box>
-          <Image boxSize="60px" objectFit="cover" src="/images/LSlogo.png" alt="Leighton Schmidt logo"/>
-        </Box> */}
+        <Box>
+          <Image boxSize="60px" objectFit="cover" src="/images/ls-logo.PNG" alt="Leighton Schmidt logo"/>
+        </Box>
         <Spacer></Spacer>
         <Link href="https://www.linkedin.com/in/leighton-schmidt86/" isExternal><IconButton icon={<FaLinkedin />} isRound="true" mr="1"></IconButton></Link>
         <Link href="https://github.com/Schmidt1519/" isExternal><IconButton icon={<FaGithub />} isRound="true" mr="1"></IconButton></Link>
