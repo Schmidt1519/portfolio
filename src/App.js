@@ -16,7 +16,7 @@ function App() {
     <VStack p={4}>
       <Flex w="100%">
         <Box>
-          <Image boxSize="60px" objectFit="cover" src="${process.env.PUBLIC_URL}/images/ls-logo.png" alt="Leighton Schmidt logo"/>
+          <Image boxSize="60px" objectFit="cover" src="/images/ls-logo.png" alt="Leighton Schmidt logo"/>
         </Box>
         <Spacer></Spacer>
         <Link href="https://www.linkedin.com/in/leighton-schmidt86/" isExternal><IconButton icon={<FaLinkedin />} isRound="true" mr="1"></IconButton></Link>
