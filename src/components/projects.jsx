@@ -31,7 +31,8 @@ function Projects() {
 
                     <Flex rounded="xl" direction="column" mt={2} ml={isNotSmallScreen ? 4 : 0}
                         bg="blue.400" h="20vh" w="20vh" justify="flex-end" _hover={{ bg: "teal.400", }}>
-                        <Text color="white" p="4" fontSize="xl" fontWeight="semibold" align="center" margin="auto">Star Wars E-Commerce</Text>
+                        <Text color="white" p="4" fontSize={isNotSmallScreen ? "xl" : "md"} fontWeight="semibold" 
+                            align="center" margin="auto">Star Wars E-Commerce</Text>
                             <Flex alignSelf="center">
                             <Link href="https://github.com/Schmidt1519/StarWarsECommerce/" isExternal>
                                     <Text color="white" p="4" fontSize="sm" fontWeight="semibold">Server/Client</Text>
