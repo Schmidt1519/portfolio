@@ -24,15 +24,9 @@ function App() {
         <Link href="mailto:schmidt1519@gmail.com" isExternal> <IconButton icon={<FiMail />} isRound="true" type="button"></IconButton></Link>
         <IconButton ml={8} icon={isDark ? <FaSun/> : <FaMoon />} isRound="true" onClick={toggleColorMode}></IconButton>
       </Flex>
-      {/* <Flex w="100%"> */}
         <Header></Header>
-        {/* </Flex> */}
-        {/* <Flex w="100%"> */}
         <Projects></Projects>
-        {/* </Flex> */}
-        {/* <Flex w="100%"> */}
         <Social ></Social>
-        {/* </Flex> */}
     </VStack>
   );
 }

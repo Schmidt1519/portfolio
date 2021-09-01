@@ -34,12 +34,6 @@ function Header() {
                     mb={isNotSmallScreen ? "0" : "12"} ml={isNotSmallScreen ? "5" : "0"} borderRadius="full"
                     backgroundColor="transparent" boxShadow="lg"
                     boxSize="350px" src="https://avatars.githubusercontent.com/u/82241251?v=4"/>
-
-                {/* <Image alignSelf="center" mt={isNotSmallScreen ? "0" : "12"}
-                    mb={isNotSmallScreen ? "0" : "12"} ml={isNotSmallScreen ? "5" : "0"} borderRadius="full"
-                    backgroundColor="transparent" boxShadow="lg"
-                    boxSize="300px" src="/images/leighton-original-gradient.jpg" alt="Leighton Schmidt logo"/> */}
-
                 </Flex>
         </Stack>
     );

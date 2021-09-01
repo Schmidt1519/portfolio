@@ -18,7 +18,7 @@ function Projects() {
 
                     <Flex rounded="xl" direction="column" mt={2} ml={isNotSmallScreen ? 4 : 0}
                     bg="blue.400" h="20vh" w="20vh" justify="flex-end" _hover={{ bg: "teal.400", }}>
-                        <Text color="white" p="4" fontSize="xl" fontWeight="semibold" align="center">Med Spa</Text>
+                        <Text color="white" p="4" fontSize="xl" fontWeight="semibold" align="center" margin="auto">Med Spa</Text>
                             <Flex alignSelf="center">
                                 <Link href="https://github.com/Schmidt1519/med-spa-frontend/" isExternal>
                                     <Text color="white" p="4" fontSize="sm" fontWeight="semibold" >Server</Text>
@@ -31,7 +31,7 @@ function Projects() {
 
                     <Flex rounded="xl" direction="column" mt={2} ml={isNotSmallScreen ? 4 : 0}
                         bg="blue.400" h="20vh" w="20vh" justify="flex-end" _hover={{ bg: "teal.400", }}>
-                        <Text color="white" p="4" fontSize="xl" fontWeight="semibold" align="center">Star Wars E-Commerce</Text>
+                        <Text color="white" p="4" fontSize="xl" fontWeight="semibold" align="center" margin="auto">Star Wars E-Commerce</Text>
                             <Flex alignSelf="center">
                             <Link href="https://github.com/Schmidt1519/StarWarsECommerce/" isExternal>
                                     <Text color="white" p="4" fontSize="sm" fontWeight="semibold">Server/Client</Text>
@@ -41,7 +41,7 @@ function Projects() {
 
                     <Flex rounded="xl" direction="column" mt={2} ml={isNotSmallScreen ? 4 : 0}
                     bg="blue.400" h="20vh" w="20vh" justify="flex-end" _hover={{ bg: "teal.400", }}>
-                        <Text color="white" p="4" fontSize="xl" fontWeight="semibold" align="center">Flashcards</Text>
+                        <Text color="white" p="4" fontSize="xl" fontWeight="semibold" align="center" margin="auto">Flashcards</Text>
                             <Flex alignSelf="center">
                             <Link href="https://github.com/Schmidt1519/flashcard-react/" isExternal>
                                     <Text color="white" p="4" fontSize="sm" fontWeight="semibold">Server</Text>
@@ -54,7 +54,7 @@ function Projects() {
 
                     <Flex rounded="xl" direction="column" mt={2} ml={isNotSmallScreen ? 4 : 0}
                     bg="blue.400" h="20vh" w="20vh" justify="flex-end" _hover={{ bg: "teal.400", }} >
-                        <Text color="white" p="4" fontSize="xl" fontWeight="semibold" align="center">Music Library</Text>
+                        <Text color="white" p="4" fontSize="xl" fontWeight="semibold" align="center" margin="auto">Music Library</Text>
                             <Flex alignSelf="center">
                             <Link href="https://github.com/Schmidt1519/music-library-react/" isExternal >
                                     <Text color="white" p="4" fontSize="sm" fontWeight="semibold">Server</Text>
@@ -67,7 +67,7 @@ function Projects() {
 
                     <Flex rounded="xl" direction="column" mt={2} ml={isNotSmallScreen ? 4 : 0}
                         bg="blue.400" h="20vh" w="20vh" justify="flex-end" _hover={{ bg: "teal.400", }}>
-                        <Text color="white" p="4" fontSize="xl" fontWeight="semibold" align="center">Trash Collector</Text>
+                        <Text color="white" p="4" fontSize="xl" fontWeight="semibold" align="center" margin="auto">Trash Collector</Text>
                             <Flex alignSelf="center">
                             <Link href="https://github.com/Schmidt1519/trash-collector/" isExternal>
                                     <Text color="white" p="4" fontSize="sm" fontWeight="semibold">Server/Client</Text>
