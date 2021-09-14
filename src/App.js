@@ -5,7 +5,11 @@ import { useColorMode } from '@chakra-ui/color-mode';
 import Projects from './components/projects';
 import Header from './components/header';
 import Social from './components/social';
+import Skills from './components/skills';
+import navBar from './components/navBar';
 import './App.css';
+import {Switch, Route } from 'react-router-dom';
+
 
 function App() {
 
@@ -13,21 +17,27 @@ function App() {
   const isDark = colorMode === "dark";
   
   return (
-    <VStack p={4}>
-      <Flex w="100%">
-        <Box>
-          <Image boxSize="60px" objectFit="cover" src="./images/ls-logo.png" alt="Leighton Schmidt logo"/>
-        </Box>
-        <Spacer></Spacer>
-        <Link href="https://www.linkedin.com/in/leighton-schmidt86/" isExternal><IconButton icon={<FaLinkedin />} isRound="true" mr="1"></IconButton></Link>
-        <Link href="https://github.com/Schmidt1519/" isExternal><IconButton icon={<FaGithub />} isRound="true" mr="1"></IconButton></Link>
-        <Link href="mailto:schmidt1519@gmail.com" isExternal> <IconButton icon={<FiMail />} isRound="true" type="button"></IconButton></Link>
-        <IconButton ml={8} icon={isDark ? <FaSun/> : <FaMoon />} isRound="true" onClick={toggleColorMode}></IconButton>
-      </Flex>
-        <Header></Header>
-        <Projects></Projects>
-        <Social ></Social>
-    </VStack>
+    <div className="outer-div">
+      <navBar />
+      <VStack p={4}>
+        <Flex w="100%">
+          <Box>
+            <Image boxSize="60px" objectFit="cover" src="./images/ls-logo.png" alt="Leighton Schmidt logo"/>
+          </Box>
+          <Spacer></Spacer>
+          <Link href="https://www.linkedin.com/in/leighton-schmidt86/" isExternal><IconButton icon={<FaLinkedin />} isRound="true" mr="1"></IconButton></Link>
+          <Link href="https://github.com/Schmidt1519/" isExternal><IconButton icon={<FaGithub />} isRound="true" mr="1"></IconButton></Link>
+          <Link href="mailto:schmidt1519@gmail.com" isExternal> <IconButton icon={<FiMail />} isRound="true" type="button"></IconButton></Link>
+          <IconButton ml={8} icon={isDark ? <FaSun/> : <FaMoon />} isRound="true" onClick={toggleColorMode}></IconButton>
+        </Flex>
+          <Header></Header>
+          <Social ></Social>
+      </VStack>
+      <Switch>
+        <Route path="/skills" component={Skills} />
+        <Route path="/projects" component={Projects} />
+      </Switch>
+    </div>
   );
 }
 
