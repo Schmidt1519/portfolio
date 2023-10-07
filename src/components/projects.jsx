@@ -20,7 +20,8 @@ function Projects() {
         w="100%"
         maxWidth={{ base: "100vh", md: "130vh", lg: "130vh", xl: "130vh" }}
       >
-        <Box alignSelf="center" px="32" py="16">
+        {/* <Box alignSelf="center" px="32" py="16"> */}
+        <Box alignSelf="center" py="6">
           <Text fontWeight="bold" fontSize="3xl" align="center">
             Projects
           </Text>
@@ -30,7 +31,7 @@ function Projects() {
               rounded="xl"
               direction="column"
               mt={2}
-              ml={isNotSmallScreen ? 4 : 0}
+              //   ml={isNotSmallScreen ? 4 : 0}
               bg="blue.400"
               h="20vh"
               w="20vh"

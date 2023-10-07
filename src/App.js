@@ -13,10 +13,10 @@ import { useColorMode } from "@chakra-ui/color-mode";
 import Projects from "./components/projects";
 import Header from "./components/header";
 import Social from "./components/social";
-import Skills from "./components/skills";
 import navBar from "./components/navBar";
 import "./App.css";
-import { Switch, Route } from "react-router-dom";
+// import { Switch, Route } from "react-router-dom";
+// import Skills from "./components/skills";
 
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -64,14 +64,14 @@ function App() {
             onClick={toggleColorMode}
           ></IconButton>
         </Flex>
-        <Header></Header>
-        <Projects></Projects>
-        <Social></Social>
+        <Header />
+        <Projects />
+        <Social />
       </VStack>
-      <Switch>
+      {/* <Switch>
         <Route path="/skills" component={Skills} />
         <Route path="/projects" component={Projects} />
-      </Switch>
+      </Switch> */}
     </div>
   );
 }
